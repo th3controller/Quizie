@@ -1,0 +1,13 @@
+name: Quizie
+version: 1.0.0
+main: net.aemcraftserver.quizie.Quizie
+author: th3controller
+commands:
+  quiz:
+    description: Quizie commands
+    usage: /<command>
+    aliases: quizie
+  answer:
+    description: Quizie answer command
+    usage: /<command> <answer>
+    aliases: ans

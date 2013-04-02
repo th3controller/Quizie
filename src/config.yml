@@ -1,0 +1,42 @@
+#############################################
+##Automatically generated config.yml       ##
+##Property of AEMCraft and MC-Core servers ##
+#############################################
+waypoints:
+  quiz-noob-spawn:
+  finished-spawn:
+permissions:
+  group-from: 'noob'
+  group-to-promoted-to: 'default'
+messages:
+  join-message: '&aWelcome to &6AEMCraft'
+  start-message: '&aTo get started type &e/quiz start'
+  unknown-command: 'Unknown command. Type "help" for help.'
+rules:
+  startingrule: rule1
+  rule1:
+    description: 'Do not grief'
+    nextrule: rule2
+  rule2:
+    description: 'Do not steal'
+    nextrule: rule3
+  rule3:
+    description: 'Be polite'
+    nextrule: finish
+quiz:
+  startingquiz: quiz1
+  quiz1:
+   question: 'Are you allowed to grief?'
+   choices: '/answer yes or /answer no'
+   answer: 'no'
+   nextquiz: quiz2
+  quiz2:
+   question: 'Are you allowed to steal?'
+   choices: '/answer yes or /answer no'
+   answer: 'no'
+   nextquiz: quiz3
+  quiz3:
+   question: 'Is being polite mandatory?'
+   choices: '/answer yes, /answer no, or /answer maybe'
+   answer: 'yes'
+   nextquiz: finish
